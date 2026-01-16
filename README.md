@@ -1,3 +1,26 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/TRACEIMPACT-Transparent%20Donations-blueviolet?style=for-the-badge&logo=blockchaindotcom" alt="Logo" />
+</p>
+
+<h1 align="center">TraceImpact</h1>
+
+<p align="center">
+  <strong>Bridging the trust gap in the ₹30,000+ crore donation sector through immutable blockchain verification.</strong>
+  <br />
+  Built by Team <b>Scarekrows</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Polygon-%238247E5.svg?style=for-the-badge&logo=polygon&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
+
+---
+
 ## 📖 Overview
 **TraceImpact** is a decentralized application (dApp) that ensures every donation is traceable, verifiable, and fully transparent. We solve the "black box" problem in traditional charity by linking on-chain financial transactions directly to tamper-proof spending proofs (receipts) stored on IPFS.
 
@@ -26,8 +49,8 @@
 | Component | Technologies |
 | :--- | :--- |
 | **Blockchain** | Solidity, Polygon Network, Hardhat |
-| **Frontend** | React.js |
-| **Backend** | Node.js, Web3.js |
+| **Frontend** | React.js, TailwindCSS, Mapbox |
+| **Backend** | Node.js, Express, Web3.js |
 | **Storage** | IPFS (Pinata) |
 | **Verification** | Chainlink Oracles |
 
@@ -37,6 +60,6 @@
 
 1. **Clone & Install**
    ```bash
-   git clone https://github.com/amanvaibhav162/Tracimpact/invitations
+   git clone [https://github.com/your-repo/traceimpact.git](https://github.com/your-repo/traceimpact.git)
    cd traceimpact
-   npm install1
+   npm install
