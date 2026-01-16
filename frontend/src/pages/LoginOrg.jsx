@@ -1,4 +1,4 @@
-function Login() {
+function LoginOrg() {
   return (
     <div className="container">
       <h1>Login page for Organization</h1>
@@ -6,4 +6,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginOrg;
