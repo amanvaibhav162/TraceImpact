@@ -16,75 +16,71 @@
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Hardhat-FFC107?style=flat-square&logo=hardhat&logoColor=black" />
+  <img src="https://img.shields.io/badge/Polygon-8247E5?style=flat-square&logo=polygon&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
 </p>
 
 ---
 
 ## 🚩 The Challenge: The Trust Deficit
-[cite_start]Traditional donation systems are "black boxes"[cite: 7]. [cite_start]Donors lack visibility into fund utilization, and NGOs struggle to prove their credibility[cite: 12].
-* [cite_start]**No Breakdown**: Donors don't see how their specific funds are spent[cite: 9].
-* [cite_start]**No Real-Time Evidence**: NGOs can't provide verifiable evidence of impact as it happens[cite: 10].
-* [cite_start]**High Risk**: Fraud and mismanagement lead to donor hesitation[cite: 11, 13].
+Traditional donation systems often function as "black boxes." Donors lack visibility into how funds are utilized, and NGOs frequently struggle to provide real-time, verifiable proof of their credibility.
+* **Visibility Gap**: Donors cannot see how their specific contributions are spent.
+* **Evidence Gap**: NGOs lack the tools to provide verifiable proof of impact as it happens.
+* **Accountability Risk**: Concerns regarding fraud and mismanagement lead to donor hesitation.
 
 ## 💡 Our Solution: The Transparency Loop
-[cite_start]We propose a system where every donation is traceable and every expenditure is backed by an immutable proof[cite: 15].
-
-1. [cite_start]**On-Chain Logging**: Every donation gets a unique ID stored immutably[cite: 18].
-2. [cite_start]**Proof-Backed Spending**: Admins **must** upload a bill/receipt to IPFS before logging an expense[cite: 22, 40].
-3. [cite_start]**End-to-End Tracking**: Donors track their money from payment to final utility with public blockchain links[cite: 23, 34].
+We propose a system where every donation is traceable and every expenditure is backed by immutable, public proof.
+* **On-Chain Logging**: Every donation is assigned a unique ID and stored immutably on the blockchain.
+* **Proof-Backed Spending**: Organizations must upload a valid bill or receipt to IPFS before any spending entry can be logged.
+* **End-to-End Tracking**: Donors can track their money from the point of payment to its final utility via public blockchain links.
 
 ---
 
 ## 🌟 Innovation Highlights
-* [cite_start]**Donor-Centric Dashboard**: Full visibility into the "life cycle" of your donation[cite: 33].
-* [cite_start]**Gamified Community Board**: Ranks donors and awards badges like *'Campaign Supporter'* and *'Consistent Donor'* to boost engagement [cite: 35, 64-67].
-* [cite_start]**Proof-Backed Smart Enforcement**: Organizations gain a tamper-proof reputation by proving every cent spent [cite: 38-40].
-* [cite_start]**Privacy-First Transparency**: Anyone can verify on-chain spending, but donors can choose to remain anonymous [cite: 41-42].
+* **Donor-Centric Dashboard**: Provides full visibility into the "life cycle" of every donation.
+* **Gamified Community Board**: Boosts engagement by ranking donors and awarding badges such as *'Campaign Supporter'* and *'Consistent Donor'*.
+* **Smart Enforcement**: A reputation system where organizations prove their accountability by linking every cent to a tamper-proof receipt.
+* **Privacy-First Transparency**: Maintains public verifiability of on-chain spending while allowing donors the option to remain anonymous.
 
 ---
 
 ## 📊 Market & Social Impact
 ### 🌍 Social Impact
-* [cite_start]**Reduces Fraud**: Mandatory proof uploads minimize mismanagement[cite: 46].
-* [cite_start]**Empowers Donors**: Full visibility increases satisfaction and social welfare participation[cite: 47, 49].
-* [cite_start]**Strengthens NGOs**: Credible organizations gain more supporters through accountability[cite: 48].
+* **Fraud Reduction**: Mandatory proof uploads through blockchain records minimize mismanagement.
+* **Donor Empowerment**: Full visibility increases satisfaction and encourages higher participation in social welfare.
+* **Credibility Building**: Strengthens NGO accountability, helping them gain more supporters through provable results.
 
 ### 📈 Market Impact
-* [cite_start]**Massive Potential**: Taps into India's ₹30,000+ crore donation sector.
-* [cite_start]**Hybrid Model**: Combines Web2 payment gateways with Web3 transparency[cite: 52].
-* [cite_start]**Scalability**: Designed for disaster relief, welfare schemes, and CSR reporting[cite: 55].
+* **Market Potential**: Taps into a massive sector, with India’s donation market exceeding ₹30,000 crore annually.
+* **Scalable Framework**: Designed for use in disaster relief, corporate social responsibility (CSR) reporting, and international welfare schemes.
 
 ---
 
 ## 🛠 Technical Architecture
+The project utilizes a hybrid Web2 and Web3 model to ensure both ease of use and maximum security.
 
-
-### [cite_start]The Tech Stack [cite: 85-100]
-* **Blockchain**: Solidity (Smart Contracts), Polygon Network (Low-cost/Fast), Hardhat.
-* **Verification**: Chainlink (Oracle), Pinata (IPFS Hosting).
+* **Blockchain**: Solidity (Smart Contracts), Polygon Network (Low-cost/Fast transactions), Hardhat.
+* **Verification & Storage**: Chainlink (Oracle services), Pinata (IPFS Hosting for bills/receipts).
 * **Backend**: Node.js, Express, Web3.js, Twilio (SMS Notifications).
-* **Frontend**: React.js, Mapbox (Visualization), TailwindCSS.
+* **Frontend**: React.js, Mapbox (Location Visualization), TailwindCSS.
 
-### [cite_start]🔒 Security Measures 
-* Strict **Input Validation** and **IPFS CID checks**.
-* **Access Control**: Only authorized organizations can log expenses.
-* **Public Auditing**: View-only access for the general public to verify all data.
+### 🔒 Security Measures
+* **Strict Validation**: Mandatory input validation and IPFS CID checks.
+* **Access Control**: Only authorized organization admins can log expenses.
+* **Public Auditing**: View-only access provided to the general public to ensure data integrity.
 
 ---
 
-## [cite_start]🏗 Workflow [cite: 68-74]
-1. [cite_start]**Organization** creates a campaign (Goal, Description, Timeline) [cite: 101-102].
-2. [cite_start]**Donor** contributes; funds are sent directly to the **Smart Contract**[cite: 83].
-3. [cite_start]**Utilization**: Organization uploads a bill to IPFS, gets a CID (hash), and logs it on-chain [cite: 71-74].
-4. [cite_start]**Visibility**: Smart contract emits an event; the donor's dashboard auto-updates with the receipt link[cite: 108].
+## 🏗 Workflow
+1. **Campaign Creation**: An organization defines a goal, description, and timeline, which is stored on the blockchain.
+2. **Donation**: A donor contributes funds; the transaction is logged with a unique Donation ID.
+3. **Utilization**: The organization uploads an expense bill to IPFS, receives a unique CID (hash), and logs the spend on-chain.
+4. **Verification**: The smart contract emits an event, and the donor’s dashboard automatically updates with the receipt link.
 
 ---
 
 ## 👥 Meet Team Scarekrows
-[cite_start]**Army Institute of Technology, Pune** [cite: 2]
+**Army Institute of Technology, Pune**
 
 | Name | Role | Contact |
 | :--- | :--- | :--- |
@@ -94,4 +90,4 @@
 | **B Srinivas Reddy** | Computer Engineering (FE) | 📧 sriniv4sreddy@gmail.com |
 
 ---
-<p align="center"><i>Developed for INNERVE 2026</i></p>
+<p align="center"><i>Developed for Practice 2026</i></p>
