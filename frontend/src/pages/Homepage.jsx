@@ -6,7 +6,7 @@ function Homepage() {
   return (
     <div>
       <div className="homepage">
-        <div className="topbar">
+        <div className="Topbar">
           <span className="logo">
             <img src="/logo.png" alt="Logo" />
           </span>
@@ -27,7 +27,7 @@ function Homepage() {
           </ul>
 
           <div className="nav-actions">
-            <button className="donate-btn">
+            <button className="Donate-btn">
               <Link to="/LoginCitizen">Donate</Link>
             </button>
             <button className="login-btn">

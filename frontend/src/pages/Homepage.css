@@ -15,7 +15,7 @@
 }
 
 /* ================= TOP BAR ================= */
-.topbar {
+.Topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +77,7 @@
   transition: all 0.2s ease;
 }
 
-.donate-btn {
+.Donate-btn {
   background: var(--amber-honey);
 }
 
@@ -85,7 +85,7 @@
   background: var(--yale-blue);
 }
 
-.donate-btn a {
+.Donate-btn a {
   color: var(--prussian-blue);
   text-decoration: none;
 }

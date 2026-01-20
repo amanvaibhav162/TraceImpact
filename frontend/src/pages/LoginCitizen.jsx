@@ -1,4 +1,5 @@
 import "./LoginCitizen.css";
+import UserDashboard from "./UserDashboard.jsx";
 import { Link } from "react-router-dom";
 
 function LoginCitizen() {
@@ -21,7 +22,9 @@ function LoginCitizen() {
             <Link to="/forgotpassword">Forgot Password?</Link>
           </p>
 
-          <button className="login-button">Login</button>
+          <button className="login-button">
+            <Link to="/UserDashboard">Login</Link>
+          </button>
 
           <div className="noaccount">
             Don’t have an account? <Link to="/signup">Sign Up</Link>
