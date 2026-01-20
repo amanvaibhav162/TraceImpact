@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* PAGE BACKGROUND */
+.login-page {
+  height: 100vh;
+  background: #f3f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD */
+.login-card {
+  width: 900px;
+  height: 520px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+/* SPLIT CARD */
+.split {
+  display: flex;
+}
+
+/* LEFT SIDE */
+.card-left {
+  flex: 1;
+  padding: 40px;
+}
+
+/* RIGHT SIDE */
+.card-right {
+  flex: 1;
+}
+
+.card-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LOGO */
+.header img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.card-left h1 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/* INPUTS */
+.card-left input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.card-left input:focus {
+  outline: none;
+  border-color: #2f6df6;
+}
+
+/* BUTTON */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2f6df6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #1c4ed8;
+}
+
+/* LINKS */
+.forgotpassword {
+  text-align: right;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.forgotpassword a,
+.noaccount a {
+  color: #cd3b3b;
+  text-decoration: none;
+}
+
+.forgotpassword a:hover,
+.noaccount a:hover {
+  text-decoration: underline;
+}
+
+.noaccount {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
