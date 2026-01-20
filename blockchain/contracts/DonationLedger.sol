@@ -3,14 +3,13 @@ pragma solidity ^0.8.19;
 
 /**
  * @title TraceImpact
- * @dev A transparent donation system linking on-chain funds to off-chain IPFS proofs.
+ * @dev Enforces transparency by linking expenditures to IPFS-hosted proofs.
  */
 contract TraceImpact {
-    
     struct Expense {
         uint256 amount;
         string purpose;
-        string ipfsCID; // The permanent link to the bill/receipt
+        string ipfsCID; // The immutable proof from IPFS [cite: 22, 74]
         uint256 timestamp;
     }
 
@@ -20,25 +19,20 @@ contract TraceImpact {
         uint256 goalAmount;
         uint256 raisedAmount;
         bool isCompleted;
-        Expense[] expenses; // The record of every rupee spent
+        Expense[] expenses; // The history of every rupee spent [cite: 23, 27]
     }
 
     mapping(uint256 => Campaign) public campaigns;
     uint256 public campaignCount;
 
-    // Events allow your Node.js backend to update the dashboard instantly
     event DonationReceived(uint256 indexed campaignId, address indexed donor, uint256 amount);
     event ExpenseLogged(uint256 indexed campaignId, uint256 amount, string purpose, string ipfsCID);
 
-    // ensures only the organization that started the campaign can spend the funds
     modifier onlyOrg(uint256 _campaignId) {
-        require(msg.sender == campaigns[_campaignId].organization, "Not authorized");
+        require(msg.sender == campaigns[_campaignId].organization, "TraceImpact: Not authorized");
         _;
     }
 
-    /**
-     * @dev Create a new fundraising campaign
-     */
     function createCampaign(string memory _title, uint256 _goal) public {
         campaignCount++;
         Campaign storage c = campaigns[campaignCount];
@@ -48,29 +42,22 @@ contract TraceImpact {
         c.isCompleted = false;
     }
 
-    /**
-     * @dev Accepts donations and logs them to the specific campaign
-     */
     function donate(uint256 _campaignId) public payable {
-        require(msg.value > 0, "Donation must be > 0");
+        require(msg.value > 0, "TraceImpact: Donation must be > 0");
         Campaign storage c = campaigns[_campaignId];
-        require(!c.isCompleted, "Campaign is closed");
+        require(!c.isCompleted, "TraceImpact: Campaign closed");
 
         c.raisedAmount += msg.value;
         emit DonationReceived(_campaignId, msg.sender, msg.value);
     }
 
-    /**
-     * @dev Log an expense. The funds are sent to the Org ONLY if they provide a proof CID.
-     */
     function logExpense(uint256 _campaignId, uint256 _amount, string memory _purpose, string memory _cid) 
         public 
         onlyOrg(_campaignId) 
     {
         Campaign storage c = campaigns[_campaignId];
-        require(address(this).balance >= _amount, "Insufficient contract balance");
+        require(address(this).balance >= _amount, "TraceImpact: Insufficient funds");
 
-        // 1. Record the proof permanently
         c.expenses.push(Expense({
             amount: _amount,
             purpose: _purpose,
@@ -78,15 +65,10 @@ contract TraceImpact {
             timestamp: block.timestamp
         }));
 
-        // 2. Transfer the funds to the organization for this specific expense
-        c.organization.transfer(_amount);
-
+        c.organization.transfer(_amount); // Fund release upon proof submission [cite: 68-70]
         emit ExpenseLogged(_campaignId, _amount, _purpose, _cid);
     }
 
-    /**
-     * @dev Verification function: Pulls the full spending history for any campaign
-     */
     function getExpenses(uint256 _campaignId) public view returns (Expense[] memory) {
         return campaigns[_campaignId].expenses;
     }
