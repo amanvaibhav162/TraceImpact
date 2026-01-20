@@ -2,6 +2,7 @@ import LoginCitizen from "./LoginCitizen.jsx";
 import LoginOrg from "./LoginOrg.jsx";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
+import Card from "../components/Socialmedia.jsx";
 function Homepage() {
   return (
     <div>
@@ -10,8 +11,6 @@ function Homepage() {
           <span className="logo">
             <img src="/logo.png" alt="Logo" />
           </span>
-          <span>traceimpact@gmail.com</span>
-          <span>📞 7880601408 / 76961 38229</span>
           <select>
             <option>India</option>
           </select>
@@ -100,15 +99,53 @@ function Homepage() {
 
       {/* Footer Section */}
       <div className="footer">
-        <p>© 2026 TraceImpact. All rights reserved.</p>
-        <div className="Help">
-          Let Us Help You:
-          <ul>
-            <li>Your Profile</li>
-            <li>Find Donations</li>
-            <li>Donation History</li>
-            <li>Help Center</li>
-          </ul>
+        <div className="footer-top">
+          {/* Brand */}
+          <div className="footer-col brand">
+            <h3>TraceImpact</h3>
+            <p>
+              Building transparent, tech-driven solutions to amplify social
+              impact, sustainability, and responsible innovation.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="footer-col">
+            <h4>Platform</h4>
+            <ul>
+              <li>About Us</li>
+              <li>Our Impact</li>
+              <li>Events</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+
+          {/* Help */}
+          <div className="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li>Your Profile</li>
+              <li>Find Donations</li>
+              <li>Donation History</li>
+              <li>Help Center</li>
+            </ul>
+          </div>
+
+          {/* Social */}
+          <div className="footer-col social">
+            <h4>Join the Community</h4>
+            <Card />
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="footer-bottom">
+          <p>© 2026 TraceImpact. All rights reserved.</p>
+          <div className="footer-legal">
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+            <span>Contact</span>
+          </div>
         </div>
       </div>
     </div>

@@ -93,10 +93,9 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background: none;   /* removed */
-  padding: 0;         /* removed */
+  background: none; /* removed */
+  padding: 0; /* removed */
 }
-
 
 /* SEARCH BAR */
 .search-container {
@@ -107,7 +106,7 @@
   background: #ffffff;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .search-input {
@@ -172,8 +171,8 @@
   background: white;
   border-radius: 12px;
   padding-bottom: 15px;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
-  transition: .2s;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
 
 .ngo-card:hover {
