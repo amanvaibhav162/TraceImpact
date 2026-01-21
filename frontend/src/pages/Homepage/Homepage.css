@@ -29,6 +29,17 @@
   height: 40px;
 }
 
+.country {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--prussian-blue);
+  background: var(--white);
+  color: var(--prussian-blue);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* ================= NAVBAR ================= */
 .navbar {
   display: flex;
