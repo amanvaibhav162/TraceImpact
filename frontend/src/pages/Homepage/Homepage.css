@@ -20,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 48px;
-  background: var(--cream);
+  background: #d8e9ff;
   color: var(--prussian-blue);
   font-size: 14px;
 }
@@ -35,7 +35,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 48px;
-  background: var(--cream);
+  background: #d8e9ff;
 }
 
 .nav-links {
@@ -101,7 +101,7 @@
 
 /* ================= PAGE ================= */
 .homepage {
-  background: var(--cream);
+  background: var(--white);
 }
 
 /* ================= HERO ================= */
@@ -192,7 +192,7 @@
 }
 /* ================= CONTENT SECTION ================= */
 .content-section {
-  background: var(--cream);
+  background: #d8e9ff;
   padding: 80px 120px;
 }
 

@@ -11,7 +11,7 @@ function Homepage() {
           <span className="logo">
             <img src="/logo.png" alt="Logo" />
           </span>
-          <select>
+          <select className="country">
             <option>India</option>
           </select>
         </div>
