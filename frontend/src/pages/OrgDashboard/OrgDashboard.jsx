@@ -1,5 +1,6 @@
 import "./OrgDashboard.css";
 import { Link } from "react-router-dom";
+import VerificationPanel from "./VerificationPanel";
 export default function OverviewDashboard() {
   return (
     <div className="dashboard">
@@ -10,15 +11,19 @@ export default function OverviewDashboard() {
         </div>
 
         <nav className="nav">
-          <div className="nav-item">Home</div>
-          <div className="nav-item">NGO Details</div>
-          <div className="nav-item active">Overview Page</div>
-          <div className="nav-item">Verification Panel</div>
+          <div className="nav-item active">Dashboard</div>
+          <div className="nav-item">
+            <Link to="/VerificationPanel">Verification Panel</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/LoginOrg">LogOut</Link>
+          </div>
         </nav>
       </aside>
 
       {/* Main Content */}
       <main className="main">
+        <h1 className="org-title">Akshaya Patra Foundation</h1>
         {/* Stats Cards */}
         <section className="stats">
           <div className="stat-card">
