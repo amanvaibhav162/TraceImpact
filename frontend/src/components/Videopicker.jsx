@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Photopicker() {
+function Videopicker() {
   return (
     <StyledWrapper>
       <form className="file-upload-form">
@@ -12,9 +12,9 @@ function Photopicker() {
             </svg>
             <p>Drag and Drop</p>
             <p>or</p>
-            <span className="browse-button">Browse image</span>
+            <span className="browse-button">Browse video</span>
           </div>
-          <input id="file" type="file" accept="image/*" />
+          <input id="file" type="file" accept="video/*" />
         </label>
       </form>
     </StyledWrapper>
@@ -64,4 +64,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default Photopicker;
+export default Videopicker;
