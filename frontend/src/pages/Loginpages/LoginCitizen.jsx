@@ -1,5 +1,5 @@
 import "./LoginCitizen.css";
-import UserDashboard from "./UserDashboard.jsx";
+import UserDashboard from "../UserDashboard/UserDashboard.jsx";
 import { Link } from "react-router-dom";
 
 function LoginCitizen() {

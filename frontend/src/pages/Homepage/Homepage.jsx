@@ -1,8 +1,8 @@
-import LoginCitizen from "./LoginCitizen.jsx";
-import LoginOrg from "./LoginOrg.jsx";
+import LoginCitizen from "../Loginpages/LoginCitizen.jsx";
+import LoginOrg from "../Loginpages/LoginOrg.jsx";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
-import Card from "../components/Socialmedia.jsx";
+import Card from "../../components/Socialmedia.jsx";
 function Homepage() {
   return (
     <div>
