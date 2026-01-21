@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e7f0ff;
+}
+
+.don-wrapper {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #003b73;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu li.active,
+.menu li:hover {
+  background: #0058a3;
+}
+
+/* Badges */
+.badges {
+  margin-top: 35px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.badge img {
+  width: 32px;
+}
+
+/* Settings button */
+.settings {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  cursor: pointer;
+}
+
+/* MAIN AREA */
+.main {
+  margin-left: 260px;
+  padding: 40px;
+  width: calc(100vw - 260px);
+}
+
+.searchBar {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  width: 70%;
+  overflow: hidden;
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  padding: 12px 15px;
+  outline: none;
+}
+
+.searchBar button {
+  width: 60px;
+  border: none;
+  background: #003b73;
+  color: white;
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 25px;
+  opacity: 0.3;
+}
+
+/* Donation Cards */
+.donCard {
+  background: white;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.left, .mid, .right {
+  flex: 1;
+}
+
+.ngoLogo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.sub {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Buttons */
+.track {
+  background: #003b73;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.report, .review {
+  border: 1px solid #003b73;
+  background: white;
+  padding: 8px;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.review:hover,
+.report:hover {
+  background: #eef5ff;
+}
