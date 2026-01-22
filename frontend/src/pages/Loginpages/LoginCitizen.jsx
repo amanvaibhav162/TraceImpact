@@ -1,37 +1,60 @@
 import "./LoginCitizen.css";
 import UserDashboard from "../UserDashboard/UserDashboard.jsx";
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
 function LoginCitizen() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [aadhaar, setAadhaar] = useState("");
+
+  const validateAadhaar = (e) => {
+    const aadhaar = e.target.value;
+    if (aadhaar.length > 12 || isNaN(aadhaar)) {
+      alert("Please enter a valid 12-digit Aadhaar number.");
+    } else {
+      setAadhaar(aadhaar);
+    }
+  };
+
+  const isLoginEnabled = username && password && aadhaar;
+
   return (
     <div className="login-page">
       <div className="login-card split">
-        {/* LEFT – FORM */}
         <div className="card-left">
           <div className="header">
             <img src="/logo.png" alt="Logo" />
           </div>
-
           <h1>Citizen Login</h1>
-
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <input type="text" placeholder="Aadhaar Number" />
+          <input
+            type="text"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Aadhaar Number"
+            value={aadhaar}
+            onChange={validateAadhaar}
+          />
 
           <p className="forgotpassword">
             <Link to="/forgotpassword">Forgot Password?</Link>
           </p>
 
-          <button className="login-button">
-            <Link to="/UserDashboard">Login</Link>
+          <button className="login-button" disabled={!isLoginEnabled}>
+            <Link to={isLoginEnabled ? "/UserDashboard" : "#"}>Login</Link>
           </button>
 
           <div className="noaccount">
             Don’t have an account? <Link to="/signup">Sign Up</Link>
           </div>
         </div>
-
-        {/* RIGHT – IMAGE */}
         <div className="card-right">
           <img src="/logincitizen.png" alt="Login visual" />
         </div>

@@ -49,8 +49,6 @@ function Homepage() {
             </button>
           </div>
         </nav>
-
-        {/* Hero Section */}
         <div className="hero">
           <div className="hero-content">
             <h1>
@@ -74,8 +72,6 @@ function Homepage() {
           </div>
         </div>
       </div>
-
-      {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/917880601408"
         target="_blank"
@@ -108,14 +104,11 @@ function Homepage() {
             and fully transparent, empowering donors to make informed decisions
             and see the real impact of their generosity.
           </p>
-          <img src="/WhyChooseUs.jpeg" alt="Why Choose Us" />
+          <img src="/blob.jpg" alt="Why Choose Us" />
         </div>
       </div>
-
-      {/* Footer Section */}
       <div className="footer">
         <div className="footer-top">
-          {/* Brand */}
           <div className="footer-col brand">
             <h3>TraceImpact</h3>
             <p>
@@ -123,8 +116,6 @@ function Homepage() {
               impact, sustainability, and responsible innovation.
             </p>
           </div>
-
-          {/* Quick Links */}
           <div className="footer-col">
             <h4>Platform</h4>
             <ul>
@@ -134,8 +125,6 @@ function Homepage() {
               <li>Partners</li>
             </ul>
           </div>
-
-          {/* Help */}
           <div className="footer-col">
             <h4>Support</h4>
             <ul>
@@ -145,15 +134,11 @@ function Homepage() {
               <li>Help Center</li>
             </ul>
           </div>
-
-          {/* Social */}
           <div className="footer-col social">
             <h4>Join the Community</h4>
             <Card />
           </div>
         </div>
-
-        {/* Bottom bar */}
         <div className="footer-bottom">
           <p>© 2026 TraceImpact. All rights reserved.</p>
           <div className="footer-legal">
