@@ -8,26 +8,29 @@ import LoginCitizen from "./pages/Loginpages/LoginCitizen.jsx";
 import UserDashboard from "./pages/UserDashboard/UserDashboard.jsx";
 import OrgDashboard from "./pages/OrgDashboard/OrgDashboard.jsx";
 import VerificationPanel from "./pages/OrgDashboard/VerificationPanel.jsx";
-
-// ⭐ NEW PAGE YOU CREATED
-import UserDonations from "./pages/UserDonations/UserDonations.jsx";
+import UserDonations from "./pages/UserDashboard/UserDonations";
+import Aboutus from "./pages/Homepage/Subpages/Aboutus.jsx";
+import Howtohelp from "./pages/Homepage/Subpages/Howtohelp.jsx";
+import News from "./pages/Homepage/Subpages/News.jsx";
+import Blogs from "./pages/Homepage/Subpages/Blogs.jsx";
+import Impact from "./pages/Homepage/Subpages/Impact.jsx";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/LoginOrg" element={<LoginOrg />} />
+< Route path ="/VerificationPanel" element={<VerificationPanel />} />
       <Route path="/LoginCitizen" element={<LoginCitizen />} />
-
-      {/* User Dashboard */}
+      <Route path="/LoginOrg" element={<LoginOrg />} />
       <Route path="/UserDashboard" element={<UserDashboard />} />
-
-      {/* NEW Donations Page */}
-      <Route path="/UserDonations" element={<UserDonations />} />
-
-      {/* Organization Dashboard */}
       <Route path="/OrgDashboard" element={<OrgDashboard />} />
       <Route path="/VerificationPanel" element={<VerificationPanel />} />
+      <Route path="/UserDonations" element={<UserDonations />} />
+      <Route path="/about" element={<Aboutus />} />
+      <Route path="/howtohelp" element={<Howtohelp />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/impact" element={<Impact />} />
     </Routes>
   );
 }
