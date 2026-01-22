@@ -1,14 +1,15 @@
 import "./OrgDashboard.css";
 import { Link } from "react-router-dom";
 import VerificationPanel from "./VerificationPanel";
+import Logo from "../../components/Logo";
 export default function OverviewDashboard() {
   return (
     <div className="dashboard">
       {/* Sidebar */}
       <aside className="sidebar">
-        <div className="logo">
-          <Link to="/">TRACEIMPACT</Link>
-        </div>
+        <Link to="/">
+          <Logo />
+        </Link>
 
         <nav className="nav">
           <div className="nav-item active">Dashboard</div>

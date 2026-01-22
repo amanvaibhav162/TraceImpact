@@ -38,6 +38,11 @@
   font-size: 15px;
 }
 
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
 .sidebar-menu li:hover,
 .sidebar-menu li.active {
   background: #0c4f80;

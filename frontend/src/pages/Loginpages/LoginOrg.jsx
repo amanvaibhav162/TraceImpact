@@ -2,6 +2,7 @@ import "./LoginOrg.css";
 import UserDashboard from "../UserDashboard/UserDashboard.jsx";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Logo from "../../components/Logo.jsx";
 
 function LoginOrg() {
   const [username, setUsername] = useState("");
@@ -23,7 +24,9 @@ function LoginOrg() {
       <div className="login-card split">
         <div className="card-left">
           <div className="header">
-            <img src="/logo.png" alt="Logo" />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
 
           <h1>Organization Login</h1>

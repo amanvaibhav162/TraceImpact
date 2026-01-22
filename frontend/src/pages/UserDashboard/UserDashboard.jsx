@@ -1,12 +1,19 @@
 import React from "react";
 import "./UserDashboard.css";
+import { Link } from "react-router-dom";
+import Logo from "../../components/Logo.jsx";
+import UserDonations from "./UserDonations";
 
 const UserDashboard = () => {
   return (
     <div className="dash-wrapper">
       {/* SIDEBAR */}
       <aside className="sidebar">
-        <h2 className="logo">TRACEIMPACT</h2>
+        <h2 className="logo">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </h2>
 
         {/* MENU ITEMS */}
         <ul className="sidebar-menu">
@@ -37,7 +44,7 @@ const UserDashboard = () => {
                 <path d="M12 21l-8-9h5V3h6v9h5l-8 9z" />
               </svg>
             </span>
-            Your Donations
+            <Link to="/UserDonations">Your Donations</Link>
           </li>
         </ul>
 

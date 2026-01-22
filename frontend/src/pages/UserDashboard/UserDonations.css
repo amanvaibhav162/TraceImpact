@@ -37,6 +37,12 @@ body {
   border-radius: 5px;
 }
 
+.menu li a {
+  color: white;
+  text-decoration: none;
+  flex: 1;
+}
+
 .menu li.active,
 .menu li:hover {
   background: #0058a3;
@@ -111,7 +117,9 @@ hr {
   border-radius: 12px;
 }
 
-.left, .mid, .right {
+.left,
+.mid,
+.right {
   flex: 1;
 }
 
@@ -139,7 +147,8 @@ hr {
   cursor: pointer;
 }
 
-.report, .review {
+.report,
+.review {
   border: 1px solid #003b73;
   background: white;
   padding: 8px;

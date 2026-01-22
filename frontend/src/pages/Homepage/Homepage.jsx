@@ -8,14 +8,13 @@ import About from "./Subpages/Aboutus.jsx";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import Card from "../../components/Socialmedia.jsx";
+import Logo from "../../components/Logo.jsx";
 function Homepage() {
   return (
     <div>
       <div className="homepage">
         <div className="Topbar">
-          <span className="logo">
-            <img src="/logo.png" alt="Logo" />
-          </span>
+          <Logo />
           <select className="country">
             <option>India</option>
           </select>

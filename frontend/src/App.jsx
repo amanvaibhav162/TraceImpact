@@ -19,7 +19,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-< Route path ="/VerificationPanel" element={<VerificationPanel />} />
+      <Route path="/VerificationPanel" element={<VerificationPanel />} />
       <Route path="/LoginCitizen" element={<LoginCitizen />} />
       <Route path="/LoginOrg" element={<LoginOrg />} />
       <Route path="/UserDashboard" element={<UserDashboard />} />

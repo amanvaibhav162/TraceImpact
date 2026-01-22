@@ -2,6 +2,7 @@ import "./LoginCitizen.css";
 import UserDashboard from "../UserDashboard/UserDashboard.jsx";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Logo from "../../components/Logo.jsx";
 function LoginCitizen() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -22,9 +23,9 @@ function LoginCitizen() {
     <div className="login-page">
       <div className="login-card split">
         <div className="card-left">
-          <div className="header">
-            <img src="/logo.png" alt="Logo" />
-          </div>
+          <Link to="/">
+            <Logo />
+          </Link>
           <h1>Citizen Login</h1>
           <input
             type="text"
