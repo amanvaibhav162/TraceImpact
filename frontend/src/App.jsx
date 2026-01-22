@@ -18,15 +18,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/login/citizen" element={<LoginCitizen />} />
-      <Route path="/login/org" element={<LoginOrg />} />
-      <Route path="/dashboard/user" element={<UserDashboard />} />
-      <Route path="/dashboard/org" element={<OrgDashboard />} />
-      <Route
-        path="/dashboard/org/verification"
-        element={<VerificationPanel />}
-      />
-      <Route path="/dashboard/user/donations" element={<UserDonations />} />
+      <Route path="/LoginCitizen" element={<LoginCitizen />} />
+      <Route path="/LoginOrg" element={<LoginOrg />} />
+      <Route path="/UserDashboard" element={<UserDashboard />} />
+      <Route path="/OrgDashboard" element={<OrgDashboard />} />
+      <Route path="/VerificationPanel" element={<VerificationPanel />} />
+      <Route path="/UserDonations" element={<UserDonations />} />
       <Route path="/about" element={<Aboutus />} />
       <Route path="/howtohelp" element={<Howtohelp />} />
       <Route path="/news" element={<News />} />
