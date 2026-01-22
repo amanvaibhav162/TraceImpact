@@ -27,7 +27,7 @@ function Blogs() {
           </article>
         </div>
         
-        <Link to="/" className="backhomebtn">Back to Home</Link>
+        <Link to="/" className="backhomebtn"> ←Back to Home</Link>
       </div>
     </div>
   );

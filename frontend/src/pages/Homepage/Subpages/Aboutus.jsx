@@ -43,7 +43,7 @@ The intersection of decentralized tech and social responsibility.
     </div>
 
     <Link to="/" className="backhomebtn">
-      Back to Home
+      ←Back to Home
     </Link>
   </div>
 </div>

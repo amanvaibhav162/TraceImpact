@@ -17,7 +17,7 @@ return (
         style={{ borderColor: "#10b981" }}
       >
         <h2 style={{ fontSize: "3rem", margin: "10px 0" }}>
-          $0.00
+          ₹0.00
         </h2>
         <p>Funds currently in escrow</p>
       </div>
