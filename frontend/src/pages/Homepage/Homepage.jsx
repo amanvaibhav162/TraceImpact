@@ -1,5 +1,10 @@
 import LoginCitizen from "../Loginpages/LoginCitizen.jsx";
 import LoginOrg from "../Loginpages/LoginOrg.jsx";
+import Howtohelp from "../Howtohelp/Howtohelp.jsx";
+import News from "../News/News.jsx";
+import Blogs from "../Blogs/Blogs.jsx";
+import Impact from "../Impact/Impact.jsx";
+import About from "../About/About.jsx";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import Card from "../../components/Socialmedia.jsx";
@@ -18,11 +23,21 @@ function Homepage() {
 
         <nav className="navbar">
           <ul className="nav-links">
-            <li><Link to="/Howtohelp">How To Help</Link></li>
-            <li><Link to="/News">News and Stories</Link></li>
-            <li><Link to="/Blogs">Blogs</Link></li>
-            <li><Link to="/Impact">Impact</Link></li>
-            <li><Link to="/About">About Us</Link></li>
+            <li>
+              <Link to="/Howtohelp">How To Help</Link>
+            </li>
+            <li>
+              <Link to="/News">News and Stories</Link>
+            </li>
+            <li>
+              <Link to="/Blogs">Blogs</Link>
+            </li>
+            <li>
+              <Link to="/Impact">Impact</Link>
+            </li>
+            <li>
+              <Link to="/About">About Us</Link>
+            </li>
           </ul>
 
           <div className="nav-actions">
