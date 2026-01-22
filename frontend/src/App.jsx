@@ -8,6 +8,11 @@ import UserDashboard from "./pages/UserDashboard/UserDashboard.jsx";
 import OrgDashboard from "./pages/OrgDashboard/OrgDashboard.jsx";
 import VerificationPanel from "./pages/OrgDashboard/VerificationPanel.jsx";
 import UserDonations from "./pages/UserDashboard/UserDonations";
+import Aboutus from "./pages/Homepage/Subpages/Aboutus.jsx";
+import Howtohelp from "./pages/Homepage/Subpages/Howtohelp.jsx";
+import News from "./pages/Homepage/Subpages/News.jsx";
+import Blogs from "./pages/Homepage/Subpages/Blogs.jsx";
+import Impact from "./pages/Homepage/Subpages/Impact.jsx";
 
 function App() {
   return (
@@ -22,6 +27,11 @@ function App() {
         element={<VerificationPanel />}
       />
       <Route path="/dashboard/user/donations" element={<UserDonations />} />
+      <Route path="/about" element={<Aboutus />} />
+      <Route path="/howtohelp" element={<Howtohelp />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/impact" element={<Impact />} />
     </Routes>
   );
 }
