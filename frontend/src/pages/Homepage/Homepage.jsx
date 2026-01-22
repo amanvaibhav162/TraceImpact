@@ -18,11 +18,11 @@ function Homepage() {
 
         <nav className="navbar">
           <ul className="nav-links">
-            <li>How To Help</li>
-            <li>News and Stories</li>
-            <li>Blogs</li>
-            <li>Impact</li>
-            <li>About Us</li>
+            <li><Link to="/Howtohelp">How To Help</Link></li>
+            <li><Link to="/News">News and Stories</Link></li>
+            <li><Link to="/Blogs">Blogs</Link></li>
+            <li><Link to="/Impact">Impact</Link></li>
+            <li><Link to="/About">About Us</Link></li>
           </ul>
 
           <div className="nav-actions">

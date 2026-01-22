@@ -1,0 +1,71 @@
+/* src/pages/Homepage/Subpages/Subpage.css */
+
+:root {
+  --primary-blue: #2563eb;
+  --dark-slate: #1e293b;
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --border-color: #e2e8f0;
+}
+
+.page {
+  padding: 80px 10%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: var(--dark-slate);
+  font-family: 'Inter', sans-serif;
+}
+
+.head {
+  margin-bottom: 50px;
+  border-left: 5px solid var(--primary-blue);
+  padding-left: 20px;
+}
+
+.subpage-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.pagecontent {
+  background: var(--glass-bg);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.infocard {
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  border-bottom: 3px solid var(--primary-blue);
+  transition: transform 0.2s ease;
+}
+
+.infocard:hover {
+  transform: translateY(-5px);
+}
+
+.backhomebtn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+  background: var(--dark-slate);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.backhomebtn:hover {
+  opacity: 0.9;
+}
