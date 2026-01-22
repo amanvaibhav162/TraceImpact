@@ -51,9 +51,13 @@ function LoginOrg() {
             <Link to="/forgotpassword">Forgot Password?</Link>
           </p>
 
-          <button className="login-button" disabled={!isLoginEnabled}>
-            <Link to={isLoginEnabled ? "/OrgDashboard" : "#"}>Login</Link>
-          </button>
+          <Link
+            to={isLoginEnabled ? "/OrgDashboard" : "#"}
+            className="login-button"
+            disabled={!isLoginEnabled}
+          >
+            Login
+          </Link>
 
           <div className="noaccount">
             Don’t have an account? <Link to="/signup">Sign Up</Link>

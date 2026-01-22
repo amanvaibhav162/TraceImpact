@@ -13,12 +13,12 @@ export default function OverviewDashboard() {
 
         <nav className="nav">
           <div className="nav-item active">Dashboard</div>
-          <div className="nav-item">
-            <Link to="/VerificationPanel">Verification Panel</Link>
-          </div>
-          <div className="nav-item">
-            <Link to="/LoginOrg">LogOut</Link>
-          </div>
+          <Link to="/VerificationPanel" className="nav-item">
+            Verification Panel
+          </Link>
+          <Link to="/LoginOrg" className="nav-item">
+            LogOut
+          </Link>
         </nav>
       </aside>
 

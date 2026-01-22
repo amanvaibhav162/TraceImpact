@@ -48,9 +48,13 @@ function LoginCitizen() {
             <Link to="/forgotpassword">Forgot Password?</Link>
           </p>
 
-          <button className="login-button" disabled={!isLoginEnabled}>
-            <Link to={isLoginEnabled ? "/UserDashboard" : "#"}>Login</Link>
-          </button>
+          <Link
+            to={isLoginEnabled ? "/UserDashboard" : "#"}
+            className="login-button"
+            disabled={!isLoginEnabled}
+          >
+            Login
+          </Link>
 
           <div className="noaccount">
             Don’t have an account? <Link to="/signup">Sign Up</Link>

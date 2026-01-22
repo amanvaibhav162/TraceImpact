@@ -40,12 +40,12 @@ function Homepage() {
           </ul>
 
           <div className="nav-actions">
-            <button className="Donate-btn">
-              <Link to="/LoginCitizen">Donate</Link>
-            </button>
-            <button className="login-btn">
-              <Link to="/LoginCitizen">Log In</Link>
-            </button>
+            <Link to="/LoginCitizen" className="Donate-btn">
+              Donate
+            </Link>
+            <Link to="/LoginCitizen" className="login-btn">
+              Log In
+            </Link>
           </div>
         </nav>
         <div className="hero">
@@ -62,12 +62,14 @@ function Homepage() {
               <br />
               verifiable, and fully transparent.
             </p>
-            <button className="hero-btn">
-              <Link to="/LoginCitizen">DONATE NOW!</Link>
-            </button>
-            <button className="hero-btn-org-btn">
-              <Link to="./LoginOrg">LOGIN AS ORGANIZATION</Link>
-            </button>
+            <div className="herobuttons">
+              <Link to="/LoginCitizen" className="hero-btn">
+                DONATE NOW!
+              </Link>
+              <Link to="/LoginOrg" className="hero-btn-org-btn">
+                LOGIN AS ORGANIZATION
+              </Link>
+            </div>
           </div>
         </div>
       </div>

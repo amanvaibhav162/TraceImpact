@@ -1,0 +1,104 @@
+.sidebar {
+  width: 260px;
+  background: #083b66;
+  color: white;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* MENU LIST */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 15px;
+  line-height: 1;
+}
+
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+/* ACTIVE + HOVER */
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+  background: #0c4f80;
+}
+
+/* BADGES */
+.badge-box {
+  margin-top: 28px;
+  padding: 14px;
+  background: #0a5085;
+  border-radius: 12px;
+}
+
+.badge-box h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.badge-item:last-child {
+  margin-bottom: 0;
+}
+
+.badge-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* SETTINGS BUTTON */
+.settings-btn {
+  margin-top: auto; /* pushes to bottom */
+  padding: 12px 14px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.settings-btn:hover {
+  background: #0c4f80;
+}

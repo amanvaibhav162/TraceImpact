@@ -79,7 +79,7 @@
 }
 
 /* ================= BUTTONS ================= */
-.nav-actions button {
+.nav-actions a {
   margin-left: 12px;
   padding: 10px 22px;
   border-radius: 30px;
@@ -87,6 +87,8 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .Donate-btn {
@@ -144,6 +146,12 @@
 }
 
 /* CTA */
+
+.herobuttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
 .hero-btn {
   margin-top: 30px;
   background: var(--amber-honey);
@@ -155,6 +163,7 @@
   font-weight: 800;
   cursor: pointer;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 .hero-btn-org-btn {
   margin-top: 30px;
@@ -168,6 +177,7 @@
   font-weight: 800;
   cursor: pointer;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 .hero-btn:hover {
   transform: translateY(-3px);

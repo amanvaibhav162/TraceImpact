@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./UserDonations.css";
 import { Link } from "react-router-dom";
 import Logo from "../../components/Logo.jsx";
+import Sidebar from "../../components/sidebar/SideBar.jsx";
 
 const UserDonations = () => {
   const [search, setSearch] = useState("");
@@ -36,45 +37,7 @@ const UserDonations = () => {
   return (
     <div className="don-wrapper">
       {/* SIDEBAR */}
-      <aside className="sidebar">
-        <h2 className="logo">
-          <Link to="/">
-            <Logo />
-          </Link>
-        </h2>
-
-        <ul className="menu">
-          <li>
-            <span className="icon">🏠</span>
-            <Link to="/UserDashboard">Home</Link>
-          </li>
-          <li>
-            <span className="icon">🏢</span> NGOs
-          </li>
-          <li className="active">
-            <span className="icon">💰</span>
-            <Link to="/UserDonations">Your Donations</Link>
-          </li>
-        </ul>
-
-        {/* BADGES */}
-        <div className="badges">
-          <h3>Your Badges</h3>
-          <div className="badge">
-            <img src="/badge1.png" alt="" /> Top Donor
-          </div>
-          <div className="badge">
-            <img src="/badge2.png" alt="" /> Silver Donor
-          </div>
-          <div className="badge">
-            <img src="/badge3.png" alt="" /> Thousand Donor
-          </div>
-        </div>
-
-        <div className="settings">
-          <span>⚙️</span> Settings
-        </div>
-      </aside>
+      <Sidebar />
 
       {/* MAIN CONTENT */}
       <main className="main">
