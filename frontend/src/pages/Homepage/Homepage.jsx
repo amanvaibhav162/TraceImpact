@@ -1,10 +1,10 @@
 import LoginCitizen from "../Loginpages/LoginCitizen.jsx";
 import LoginOrg from "../Loginpages/LoginOrg.jsx";
-import Howtohelp from "../Howtohelp/Howtohelp.jsx";
-import News from "../News/News.jsx";
-import Blogs from "../Blogs/Blogs.jsx";
-import Impact from "../Impact/Impact.jsx";
-import About from "../About/About.jsx";
+import Howtohelp from "./Subpages/Howtohelp.jsx";
+import News from "./Subpages/News.jsx";
+import Blogs from "./Subpages/Blogs.jsx";
+import Impact from "./Subpages/Impact.jsx";
+import About from "./Subpages/Aboutus.jsx";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import Card from "../../components/Socialmedia.jsx";
