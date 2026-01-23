@@ -17,27 +17,22 @@ function Sidebar() {
 
       {/* MENU */}
       <ul className="sidebar-menu">
-        <Link
-          to="/UserDashboard"
-          className={isActive("/UserDashboard") ? "active" : ""}
-        >
-          <span className="icon">🏠</span>
-          Home
-        </Link>
-
-        <Link to="/NGOs" className={isActive("/NGOs") ? "active" : ""}>
-          <span className="icon">🏢</span>
-          NGOs
-        </Link>
-
-        <Link
-          to="/UserDonations"
-          className={isActive("/UserDonations") ? "active" : ""}
-        >
-          <span className="icon">💰</span>
-          Your Donations
-        </Link>
-      </ul>
+  <li>
+    <Link to="/UserDashboard" className={isActive("/UserDashboard") ? "active" : ""}>
+      <span className="icon">🏠</span> Home
+    </Link>
+  </li>
+  <li>
+    <Link to="/NGOs" className={isActive("/NGOs") ? "active" : ""}>
+      <span className="icon">🏢</span> NGOs
+    </Link>
+  </li>
+  <li>
+    <Link to="/UserDonations" className={isActive("/UserDonations") ? "active" : ""}>
+      <span className="icon">💰</span> Your Donations
+    </Link>
+  </li>
+</ul>
 
       {/* BADGES */}
       <div className="badge-box">

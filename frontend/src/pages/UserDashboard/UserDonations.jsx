@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./UserDonations.css";
 import { Link } from "react-router-dom";
 import Logo from "../../components/Logo.jsx";
-import Sidebar from "../../components/sidebar/Sidebarud.jsx";
+import Sidebar from "../../components/sidebar/Sidebar.jsx";
 
 const UserDonations = () => {
   const [search, setSearch] = useState("");
