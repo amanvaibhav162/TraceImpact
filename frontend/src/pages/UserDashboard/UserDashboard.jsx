@@ -43,7 +43,7 @@ const UserDashboard = () => {
         </div>
         <div className="ngo-grid">
           <div className="ngo-card">
-            <img src="https://source.unsplash.com/400x250/?school" />
+            <img src="NGO1.png" />
             <h3>Akshaya Foundation</h3>
             <p>
               Helping underprivileged children get access to food & education.
@@ -52,21 +52,21 @@ const UserDashboard = () => {
           </div>
 
           <div className="ngo-card">
-            <img src="https://source.unsplash.com/400x250/?water" />
+            <img src="NGO2.jpg" />
             <h3>Arogya Seva Trust</h3>
             <p>Clean drinking water projects in rural & tribal areas.</p>
             <button className="donate-btn">Donate Now</button>
           </div>
 
           <div className="ngo-card">
-            <img src="https://source.unsplash.com/400x250/?health" />
+            <img src="NGO3.png" />
             <h3>BrightPath Foundation</h3>
             <p>Women empowerment & health support initiatives.</p>
             <button className="donate-btn">Donate Now</button>
           </div>
 
           <div className="ngo-card">
-            <img src="/NGO1.png" />
+            <img src="NGO4.jpg" />
 
             <h3>Green Horizons Wildlife Society</h3>
             <p>Protecting wildlife and restoring natural habitats.</p>
