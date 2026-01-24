@@ -77,9 +77,7 @@ function Homepage() {
                 Blockchain-Based
               </motion.span>
 
-              <motion.span className="block highlight">
-                Donation Transparency
-              </motion.span>
+              <motion.span>Donation Transparency</motion.span>
 
               <motion.span
                 className="block"
