@@ -17,9 +17,6 @@ function Homepage() {
   const heroY = useTransform(scrollY, [0, 600], [0, -200]);
   const heroOpacity = useTransform(scrollY, [0, 600], [1, 0.4]);
 
-  const blockYSlow = useTransform(scrollY, [0, 800], [0, -120]);
-  const blockYFast = useTransform(scrollY, [0, 800], [0, -220]);
-
   return (
     <div>
       <div className="homepage">
@@ -59,26 +56,6 @@ function Homepage() {
           </div>
         </nav>
         <div className="hero">
-          <div className="hero-inner">
-            <motion.div
-              className="floating-block block1"
-              style={{ y: blockYSlow }}
-              animate={{ rotate: [0, 5, 0] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <motion.div
-              className="floating-block block2"
-              style={{ y: blockYFast }}
-              animate={{ rotate: [0, -5, 0] }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <motion.div
-              className="floating-block block3"
-              style={{ y: blockYSlow }}
-              animate={{ rotate: [0, 3, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </div>
           <motion.div
             className="hero-content"
             style={{ y: heroY, opacity: heroOpacity }}

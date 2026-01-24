@@ -399,7 +399,6 @@
 /* Highlighted keyword */
 .highlight {
   display: inline-block;
-  background-color: rgba(171, 32, 32, 0.691);
   color: var(--prussian-blue);
   padding: 6px 14px;
   border-radius: 10px;
