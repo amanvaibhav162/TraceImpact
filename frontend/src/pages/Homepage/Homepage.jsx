@@ -52,22 +52,23 @@ function Homepage() {
           </div>
         </nav>
         <div className="hero">
-          <motion.div
-            className="floating-block block1"
-            animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="floating-block block2"
-            animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="floating-block block3"
-            animate={{ y: [0, -15, 0], rotate: [0, 3, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          />
-
+          <div className="hero-inner">
+            <motion.div
+              className="floating-block block1"
+              animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.div
+              className="floating-block block2"
+              animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.div
+              className="floating-block block3"
+              animate={{ y: [0, -15, 0], rotate: [0, 3, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
           <div className="hero-content">
             <motion.h1
               initial="hidden"
