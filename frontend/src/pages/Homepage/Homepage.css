@@ -136,7 +136,7 @@
 }
 
 .hero-content {
-  position: relative;
+  /* position: relative; */
   margin-left: 120px;
   padding-top: 90px;
   padding-bottom: 80px; /* reduced but sufficient */
@@ -399,7 +399,7 @@
 /* Highlighted keyword */
 .highlight {
   display: inline-block;
-  background: rgba(243, 246, 235, 0.85); /* transparent cream */
+  background-color: rgba(171, 32, 32, 0.691);
   color: var(--prussian-blue);
   padding: 6px 14px;
   border-radius: 10px;
