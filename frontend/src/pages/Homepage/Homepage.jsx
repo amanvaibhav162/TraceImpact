@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import LoginCitizen from "../Loginpages/LoginCitizen.jsx";
 import LoginOrg from "../Loginpages/LoginOrg.jsx";
 import Howtohelp from "./Subpages/Howtohelp.jsx";
@@ -9,7 +10,9 @@ import { Link } from "react-router-dom";
 import "./Homepage.css";
 import Card from "../../components/Socialmedia.jsx";
 import Logo from "../../components/Logo.jsx";
+
 function Homepage() {
+  console.log(motion);
   return (
     <div>
       <div className="homepage">
@@ -49,27 +52,100 @@ function Homepage() {
           </div>
         </nav>
         <div className="hero">
+          <motion.div
+            className="floating-block block1"
+            animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="floating-block block2"
+            animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="floating-block block3"
+            animate={{ y: [0, -15, 0], rotate: [0, 3, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          />
+
           <div className="hero-content">
-            <h1>
-              Blockchain-Based
-              <br />
-              Donation Transparency
-              <br />
-              System
-            </h1>
-            <p>
+            <motion.h1
+              initial="hidden"
+              animate="show"
+              variants={{
+                show: { transition: { staggerChildren: 0.25 } },
+              }}
+            >
+              <motion.span
+                className="block"
+                variants={{
+                  hidden: { opacity: 0, y: 60 },
+                  show: { opacity: 1, y: 0 },
+                }}
+              >
+                Blockchain-Based
+              </motion.span>
+
+              <motion.span className="block highlight">Donation</motion.span>
+              <motion.span className="block highlight">
+                Transparency
+              </motion.span>
+
+              <motion.span
+                className="block"
+                variants={{
+                  hidden: { opacity: 0, y: 60 },
+                  show: { opacity: 1, y: 0 },
+                }}
+              >
+                System
+              </motion.span>
+            </motion.h1>
+
+            <motion.div
+              className="underline"
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ delay: 1, duration: 0.6 }}
+            />
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2 }}
+            >
               Ensure every donation is traceable,
               <br />
               verifiable, and fully transparent.
-            </p>
-            <div className="herobuttons">
-              <Link to="/LoginCitizen" className="hero-btn">
-                DONATE NOW!
-              </Link>
-              <Link to="/LoginOrg" className="hero-btn-org-btn">
-                LOGIN AS ORGANIZATION
-              </Link>
-            </div>
+            </motion.p>
+
+            <motion.div
+              className="herobuttons"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.5 }}
+            >
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 30px rgba(0,255,200,0.6)",
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link to="/LoginCitizen" className="hero-btn">
+                  DONATE NOW
+                </Link>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link to="/LoginOrg" className="hero-btn-org-btn">
+                  LOGIN AS ORGANIZATION
+                </Link>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 :root {
   --amber-honey: #eca400;
   --cream: #eaf8bf;
+  --cream-80: rgba(234, 248, 191, 0.8);
+  --cream-60: rgba(234, 248, 191, 0.6);
+  --cream-40: rgba(234, 248, 191, 0.4);
   --cerulean: #006992;
   --yale-blue: #27476e;
   --prussian-blue: #001d4a;
@@ -120,15 +123,23 @@
 
 /* ================= HERO ================= */
 .hero {
-  height: 540px;
-  background: linear-gradient(135deg, var(--yale-blue), var(--prussian-blue));
   position: relative;
+  min-height: calc(100vh - 120px); /* accounts for topbar + navbar */
+  height: auto;
+  background: radial-gradient(
+    circle at top left,
+    var(--cerulean),
+    var(--yale-blue),
+    var(--prussian-blue)
+  );
+  overflow: visible;
 }
 
 .hero-content {
-  position: absolute;
-  top: 140px;
-  left: 120px;
+  position: relative;
+  margin-left: 120px;
+  padding-top: 90px;
+  padding-bottom: 80px; /* reduced but sufficient */
   max-width: 560px;
   color: var(--white);
 }
@@ -149,25 +160,12 @@
 
 .herobuttons {
   display: flex;
-  flex-direction: row;
-  margin-top: 10px;
+  gap: 30px;
+  margin-top: 28px;
 }
-.hero-btn {
-  margin-top: 30px;
-  background: var(--amber-honey);
-  color: var(--prussian-blue);
-  padding: 16px 38px;
-  border-radius: 10px;
-  border: none;
-  font-size: 16px;
-  font-weight: 800;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  text-decoration: none;
-}
+
+.hero-btn,
 .hero-btn-org-btn {
-  margin-top: 30px;
-  margin-left: 30px;
   background: var(--amber-honey);
   color: var(--prussian-blue);
   padding: 16px 38px;
@@ -179,6 +177,7 @@
   transition: all 0.25s ease;
   text-decoration: none;
 }
+
 .hero-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
@@ -388,4 +387,59 @@
 
 .footer-legal span:hover {
   opacity: 1;
+}
+
+/* ================= HERO ENHANCEMENTS ================= */
+
+/* Headline structure for motion */
+.hero-content h1 .block {
+  display: block;
+}
+
+/* Highlighted keyword */
+.highlight {
+  display: inline-block;
+  color: var(--prussian-blue);
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+/* Animated underline */
+.underline {
+  width: 220px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--amber-honey), var(--cream));
+  margin-top: 12px;
+  margin-bottom: 8px;
+  transform-origin: left;
+}
+
+/* Floating blockchain blocks */
+.floating-block {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: rgba(234, 248, 191, 0.15);
+  border: 1px solid rgba(234, 248, 191, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  z-index: 1;
+}
+
+/* Individual placements */
+.block1 {
+  top: 7%;
+  left: 3%;
+}
+
+.block2 {
+  top: 55%;
+  left: 52%;
+}
+
+.block3 {
+  bottom: 16%;
+  left: 70%;
 }

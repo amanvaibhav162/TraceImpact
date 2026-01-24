@@ -9,9 +9,9 @@ const UserDashboard = () => {
     <div className="dash-wrapper">
       {/* SIDEBAR */}
       <Sidebar />
+
       {/* MAIN AREA */}
       <main className="main">
-        {/* TOP BAR: SEARCH + FILTER + PROFILE */}
         <div className="topbar">
           <div className="search-container">
             <input type="text" placeholder="Search" className="search-input" />
@@ -34,8 +34,6 @@ const UserDashboard = () => {
             <span className="username">User</span>
           </div>
         </div>
-
-        {/* CATEGORY BUTTONS */}
         <div className="categories">
           <button>Health</button>
           <button>Education</button>
@@ -43,8 +41,6 @@ const UserDashboard = () => {
           <button>Women</button>
           <button>Environment</button>
         </div>
-
-        {/* NGO GRID */}
         <div className="ngo-grid">
           <div className="ngo-card">
             <img src="https://source.unsplash.com/400x250/?school" />
