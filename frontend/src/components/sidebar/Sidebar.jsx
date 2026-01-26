@@ -83,8 +83,8 @@ function Sidebar() {
         {/* Your Donations */}
         <li>
           <Link
-            to="/SomeRoute"
-            className={isActive("/SomeRoute") ? "active" : ""}
+            to="/UserDonations"
+            className={isActive("/UserDonations") ? "active" : ""}
           >
             <span className="icon">
               <svg

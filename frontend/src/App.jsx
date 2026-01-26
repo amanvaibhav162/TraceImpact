@@ -8,7 +8,7 @@ import LoginCitizen from "./pages/Loginpages/LoginCitizen.jsx";
 import UserDashboard from "./pages/UserDashboard/UserDashboard.jsx";
 import OrgDashboard from "./pages/OrgDashboard/OrgDashboard.jsx";
 import VerificationPanel from "./pages/OrgDashboard/VerificationPanel.jsx";
-import UserDonations from "./pages/UserDashboard/UserDonations";
+import UserDonations from "./pages/UserDashboard/UserDonations.jsx";
 import Aboutus from "./pages/Homepage/Subpages/Aboutus.jsx";
 import Howtohelp from "./pages/Homepage/Subpages/Howtohelp.jsx";
 import News from "./pages/Homepage/Subpages/News.jsx";
