@@ -10,37 +10,76 @@
 }
 
 /* Sidebar */
+/* ===== COMMON SIDEBAR WRAPPER ===== */
 .sidebar {
-  width: 240px;
+  width: 260px;
   background: #083b66;
   color: white;
-  padding: 20px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.logo {
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-.logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
+/* ===== LOGO ===== */
+.sidebar > a {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 28px;
 }
 
+/* ===== NAV CONTAINER ===== */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== NAV ITEM ===== */
 .nav-item {
-  padding: 12px;
-  margin-bottom: 8px;
-  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 14px;
+  border-radius: 8px;
+
+  font-size: 15px;
   cursor: pointer;
-}
-.nav-item a {
+
   color: white;
   text-decoration: none;
 }
 
-.nav-item.active,
-.nav-item:hover {
-  background: #1e5f91;
+/* SVG ICON */
+.nav-item svg {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+}
+
+/* LINK INSIDE NAV ITEM */
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* HOVER + ACTIVE */
+.nav-item:hover,
+.nav-item.active {
+  background: #0c4f80;
+}
+
+/* LOGOUT AT BOTTOM (OPTIONAL BUT RECOMMENDED) */
+.nav {
+  flex: 1;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
 }
 
 /* Main */

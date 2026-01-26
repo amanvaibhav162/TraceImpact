@@ -1,24 +1,65 @@
 import "./OrgDashboard.css";
 import { Link } from "react-router-dom";
 import VerificationPanel from "./VerificationPanel";
-import Logo from "../../components/Logo";
+import Logo2 from "../../components/Logo2.jsx";
 export default function OverviewDashboard() {
   return (
     <div className="dashboard">
       {/* Sidebar */}
       <aside className="sidebar">
         <Link to="/">
-          <Logo />
+          <Logo2 />
         </Link>
 
         <nav className="nav">
-          <div className="nav-item active">Dashboard</div>
-          <Link to="/VerificationPanel" className="nav-item">
-            Verification Panel
-          </Link>
-          <Link to="/LoginOrg" className="nav-item">
-            LogOut
-          </Link>
+          <div className="nav-item active">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"
+              />
+            </svg>
+            Dashboard
+          </div>
+          <div className="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M1 3v18h22V3zm4 6h4.5v2H5zm0 4h4.5v2H5zm13-3a2.5 2.5 0 0 1-1.32 2.204A3.5 3.5 0 0 1 19 15.5v1h-7v-1c0-1.519.967-2.811 2.32-3.296A2.5 2.5 0 1 1 18 10"
+              />
+            </svg>
+            <Link to="/VerificationPanel">Verification Panel</Link>
+          </div>
+          <div className="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M5 5h6c.55 0 1-.45 1-1s-.45-1-1-1H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6c.55 0 1-.45 1-1s-.45-1-1-1H5z"
+              />
+              <path
+                fill="currentColor"
+                d="m20.65 11.65l-2.79-2.79a.501.501 0 0 0-.86.35V11h-7c-.55 0-1 .45-1 1s.45 1 1 1h7v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7"
+              />
+            </svg>
+            <Link to="/LoginOrg" className="nav-item">
+              LogOut
+            </Link>
+          </div>
         </nav>
       </aside>
 
