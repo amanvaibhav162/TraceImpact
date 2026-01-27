@@ -7,16 +7,12 @@
   flex-direction: column;
   box-sizing: border-box;
 }
-
-/* LOGO */
 .logo {
   font-size: 22px;
   margin-top: 14px;
   display: flex;
   align-items: center;
 }
-
-/* MENU LIST */
 .sidebar-menu {
   list-style: none;
   padding: 0;
@@ -45,14 +41,11 @@
   gap: 12px;
   width: 100%;
 }
-
-/* ACTIVE + HOVER */
 .sidebar-menu li:hover,
 .sidebar-menu li.active {
   background: #0c4f80;
 }
 
-/* BADGES */
 .badge-box {
   margin-top: 28px;
   padding: 14px;
@@ -84,10 +77,8 @@
   object-fit: contain;
   flex-shrink: 0;
 }
-
-/* SETTINGS BUTTON */
 .settings-btn {
-  margin-top: auto; /* pushes to bottom */
+  margin-top: auto;
   padding: 12px 14px;
   border-radius: 8px;
 
